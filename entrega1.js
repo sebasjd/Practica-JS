@@ -19,23 +19,27 @@ let pizzas = [
 console.log(`// a) //`)
 const idImpar = pizzas.filter((piza) => piza.ID % 2 != 0)
 
+console.log(`Las pizzas con ID impar son:`)
 for (piza of idImpar) {
-    console.log(`La ${piza.nombre} tiene ID impar`)
+    console.log(`${piza.nombre}`)
 }
 console.log(`// b) //`)
 const baratas = pizzas.filter((piza) => piza.precio < 600)
 
+console.log(`Hay ${baratas.length} pizzas de menos de $600:`)
 for (piza of baratas) {
     console.log(`La ${piza.nombre} cuesta $${piza.precio}`)
 }
 
 console.log(`// c) //`)
+console.log(`PRECIOS:`)
 for (piza of pizzas) {
-    console.log(`Podes comprar una ${piza.nombre} a $${piza.precio}`)
+    console.log(`La ${piza.nombre} vale $${piza.precio}`)
 }
 
 console.log(`// d) //`)
 
 for (piza of pizzas) {
-    console.log(`La ${piza.nombre} se hace con: ${piza.ingredientes.join(', ')}`)
+    console.log(`=>La ${piza.nombre} se hace con:`)
+    console.log(`${piza.ingredientes.join(', ')}`)
 }
