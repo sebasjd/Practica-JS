@@ -144,3 +144,9 @@ button {
     animation: menu-activado 400ms;
     transform: rotate(-45deg) translate(3px, -7px);
 }
+
+li:active {
+    border-radius: 9px;
+    background: #030098;
+    box-shadow: inset 7px 7px 14px #020069, inset -7px -7px 14px #0400c7;
+}
