@@ -117,7 +117,6 @@ button {
         width: 30px;
         margin: 10px auto;
         border-radius: 10px;
-        animation: menu-activado 400ms;
     }
     @keyframes menu-activado {
         from {
@@ -134,7 +133,7 @@ button {
 
 .br-1.animado {
     animation: menu-activado 400ms;
-    transform: rotate(45deg) translate(-8px, 18px)
+    transform: rotate(45deg) translate(2.5px, 7px)
 }
 
 .br-2.animado {
@@ -143,5 +142,5 @@ button {
 
 .br-3.animado {
     animation: menu-activado 400ms;
-    transform: rotate(-45deg) translate(-8px, -18px);
+    transform: rotate(-45deg) translate(3px, -7px);
 }
