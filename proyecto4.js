@@ -1,4 +1,3 @@
-(function() {
     const sliders = [...document.querySelectorAll('.slider-body')];
     const arrowBefore = document.getElementById('before')
     const arrowNext = document.getElementById('next')
@@ -17,4 +16,3 @@
         sliders[currentElement - 1].classList.toggle('slider-body-show')
         sliders[value - 1].classList.toggle('slider-body-show');
     }
-})()
